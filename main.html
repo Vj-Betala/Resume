@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Resume</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet"
+        href="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.0-rc2/angular-material.min.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:500,200,700" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-animate.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-aria.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-messages.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.0-rc2/angular-material.min.js"></script>
+
+    <link href="style.css" rel="stylesheet">
+    <script src="https://unpkg.com/material-resume@1.0.1/resume.min.js"></script>
+
+</head>
+
+<body ng-app="Resume" ng-cloak="">
+    <div id="overlay">
+        <img src="safe_image.gif" id="back-img">
+    </div>
+    <resume>
+        <resume-heading first-name="Vaarij K." last-name="Betala" linkedin="vj-betala" github="Vj-Betala"
+            email="vaarijbetala@gmail.com" phone="(226)-934-8158">
+        </resume-heading>
+        <resume-body>
+            <resume-column flex="20">
+                <sidebar-category name="Education">
+                    <p>Sir John A Mcdonald Sr PS.</p>
+                    <p>Graduatating 2019</p>
+                </sidebar-category>
+                <sidebar-category name="Achievements">
+                    <p>CCC 45/75 : Junior</p>
+                    <p>Top 15 : DMPG Silver</p>
+                    <p>Gold rated on HackerRank</p>
+                    <p>Intermediate Certificate in Python</p>
+                    <p>Valedictorian of Graduatating Class</p>
+                </sidebar-category>
+                <sidebar-category name="Languages & concepts">
+                    <p>C++</p>
+                    <p>Python with API's</p>
+                    <p>Javascript</p>
+                    <p>Algorithms</p>
+                    <p>Data Science</p>
+                </sidebar-category>
+            </resume-column>
+            <resume-column flex="80">
+                <category name="Experience">
+                    <category-item title="Teaching" subtitle="Educatus">
+                        <li>Taught math to little kids</li>
+                    </category-item>
+                </category>
+                <category name="Contests">
+                    <category-item title="Competitive Programming" subtitle="DMOPC">
+                        <li>Top 15 in DMPG: Silver/ DMOPC</li>
+                        <li>CCC Senior Level questions and IOI questions</li>
+                        <li>Wrote in C++, with concepts like recursion, stacks and strings</li>
+                    </category-item>
+                    <category-item title="Functional Programming" subtitle="Turner Hacks">
+                        <li>The Project was oriented around user activity and giving users satisfaction for being fit
+                            and active.</li>
+                        <li>I worked on the frontend to makesure everything was working well </li>
+                    </category-item>
+                    <category-item title="Functional Programming" subtitle="Wolf Hacks">
+                        <li>Made a webchat application, for all platforms, which encouraged school appropriate behaviour
+                        </li>
+                        <li>Made in Javascript, with full backend capabilities, I was responsible for the frontend
+                            messages.</li>
+                    </category-item>
+                    <category-item title="Math" subtitle="Gauss">
+                        <li>Scored 1st in class for Gauss grade 8.</li>
+                    </category-item>
+                </category>
+                <category name="Courses">
+                    <category-item title="Machine Learning">
+                        <li>Learning with course on Udacity</li>
+                        <li>Currently working with Naive Bayes data assorting</li>
+                        <li>Written in Python</li>
+                    </category-item>
+                </category>
+                <category name="Side- Projects">
+                    <category-item title="Github repositories">
+                        <li><strong>Game of life </strong>HTML, CSS, JS project for Conway's Game of Life, written with HTML canvas.</li>
+                        <li><strong>Python Machine Learning </strong>The code for my python Naive Bayes model, which can assort data, based on training models.</li>
+                    </category-item>
+                    <category-item title="Repl.it projects">
+                        <li><strong>Competitive Programming </strong>Code for Competitive programming questions, and solutions</li>
+                    </category-item>
+                </category>
+                <category name="Skills">
+                    <category-item title="Technologies">
+                        <li><strong>Experienced With</strong> Competitive Programming \ Functional Programming</li>
+                        <li><strong>Programming</strong> Javascript \ C++ \ Python</li>
+                    </category-item>
+                </category>
+            </resume-column>
+        </resume-body>
+    </resume>
+</body>
+
+</html>
